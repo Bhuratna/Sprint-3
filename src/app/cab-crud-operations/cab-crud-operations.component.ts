@@ -21,4 +21,22 @@ public RegisterNow()
   let resp=this.service.doRegistration(this.cab);
   resp.subscribe((data:any) =>this.cab=data);
 }
-publi
+public updateCab()
+{
+  let resp=this.service.update(this.cab);
+  resp.subscribe((data:any) =>this.cab=data);
+}
+public deleteCab()
+{
+  let resp=this.service.delete(this.cab);
+  resp.subscribe((data:any) =>this.cab=data);
+}
+public cabsType () {
+  let resp=this.service.getCabsOfType(this.cab);
+  resp.subscribe((data:any) => this.cab=data);
+}
+public countOfCabs() {
+  let resp=this.service.getCountCabsOfType(this.cab);
+  resp.subscribe((data:any) => this.cab=data);
+}
+}

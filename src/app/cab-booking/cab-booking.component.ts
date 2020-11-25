@@ -18,4 +18,20 @@ export class CabBookingComponent implements OnInit {
     let resp = this.service.doRegistration(this.cab);
     resp.subscribe((data:any) => this.message=data);
   }
+   public updateCab() {
+     let resp=this.service.update(this.cab);
+     resp.subscribe((data:any) => this.message=data);
+   }
+   public deleteCab() {
+    let resp=this.service.delete(this.cab);
+    resp.subscribe((data:any) => this.message=data);
+  }
+  public cabsType () {
+    let resp=this.service.getCabsOfType(this.cab);
+    resp.subscribe((data:any) => this.message=data);
+  }
+  public countOfCabs() {
+    let resp=this.service.getCountCabsOfType(this.cab);
+    resp.subscribe((data:any) => this.message=data);
+  }
 }
