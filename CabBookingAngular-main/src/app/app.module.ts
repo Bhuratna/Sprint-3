@@ -21,6 +21,9 @@ import { DriverUpdateComponent } from './driver/driver-update/driver-update.comp
 import { CustomerDeleteComponent } from './customer/customer-delete/customer-delete.component';
 import { BestDriverComponent } from './driver/best-driver/best-driver.component';
 import { HomeComponent } from './home/home.component';
+import { TripbookingaddComponent } from './tripbooking/tripbookingadd/tripbookingadd.component';
+import { CustomerwiseComponent } from './tripbooking/customerwise/customerwise.component';
+import { CustomerbillComponent } from './tripbooking/customerbill/customerbill.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +41,9 @@ import { HomeComponent } from './home/home.component';
     CustomerDeleteComponent,
     BestDriverComponent,
     HomeComponent,
+    TripbookingaddComponent,
+    CustomerwiseComponent,
+    CustomerbillComponent,
   ],
   imports: [
     BrowserModule,

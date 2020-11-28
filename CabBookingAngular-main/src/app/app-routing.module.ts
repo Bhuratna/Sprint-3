@@ -13,6 +13,9 @@ import { DriverAddComponent } from './driver/driver-add/driver-add.component';
 import { DriverUpdateComponent } from './driver/driver-update/driver-update.component';
 import { DriverValidateComponent } from './driver/driver-validate/driver-validate.component';
 import { HomeComponent } from './home/home.component';
+import { CustomerbillComponent } from './tripbooking/customerbill/customerbill.component';
+import { CustomerwiseComponent } from './tripbooking/customerwise/customerwise.component';
+import { TripbookingaddComponent } from './tripbooking/tripbookingadd/tripbookingadd.component';
 
 const routes: Routes = [
   {path: 'home', component:HomeComponent},
@@ -27,7 +30,10 @@ const routes: Routes = [
   {path: 'updateAdmin', component:AdminUpdateComponent},
   {path: 'updateDriver', component:DriverUpdateComponent},
   {path: 'allCustomers', component:CustomerDeleteComponent},
-  {path: 'bestDrivers', component:BestDriverComponent}
+  {path: 'bestDrivers', component:BestDriverComponent},
+  {path: 'addTripBooking', component:TripbookingaddComponent},
+  {path: 'customerTrips', component:CustomerwiseComponent},
+  {path: 'customerTripBill', component:CustomerbillComponent}
 ];
 
 @NgModule({
