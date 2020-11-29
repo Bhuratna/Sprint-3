@@ -12,11 +12,20 @@
     <br>
     <br>
     <div class="main">
+
+      <div class="back5">
+        <div class="sections5 jumbotron" >
     <div class="firstSection">
-        Welcome {{admin.username}} To Our Portal
+      <h2> 
+        <style>
+            h2 {text-align: center;}
+            </style>
+        Welcome {{admin.username}} To Our Portal </h2>
         <br>
         Email Id:  {{admin.email}}
+        <br>
         Mobile Number: {{admin.mobileNumber}}
+        <br>
         Admin id: {{admin.adminId}}
     </div>
     <div class="thirdSection">
@@ -37,4 +46,6 @@
         <button (click)="viewAllCustomers()">View All Customers</button>
     </div>
     </div>
+</div>
+</div>
 </div>
