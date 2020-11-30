@@ -1,0 +1,70 @@
+<div *ngIf="admin !== undefined">
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card w3-hide-small">
+          <a routerLink="" class="w3-bar-item w3-button"><b> <img src="https://icon-library.net/images/car-icon-images/car-icon-images-12.jpg" style="width:25px;height:25px"></b>Pick Me Cab</a>
+          <div class="w3-right ">
+            <a routerLink="" class="w3-bar-item w3-button">Home</a>
+            <a routerLink="/updateAdmin" class="w3-bar-item w3-button">Udate Profile</a>
+          </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="main">
+
+      <div class="back5">
+        <div class="sections5 jumbotron" >
+    <div class="firstSection">
+      <h2> 
+        <style>
+            h2 {text-align: center;}
+            </style>
+        Welcome {{admin.username}} To Our Portal </h2>
+        <br>
+        Email Id:  {{admin.email}}
+        <br>
+        Mobile Number: {{admin.mobileNumber}}
+        <br>
+        Admin id: {{admin.adminId}}
+    </div>
+    <div class="thirdSection">
+        What Would you Want to do next?
+        <br>
+        <table style="text-align: center; margin: auto;">
+            <tr>
+                <td><button (click)="goToBestDrivers()" class="btn btn-primary btn-lg btn-block">View Best Drivers</button></td>&nbsp; &nbsp;
+                <br>
+                <br>
+                <td><button (click)="goToCustomerIdTrip()" class="btn btn-primary btn-lg btn-block">View Trip Details By Customer Id</button></td>
+                <br>
+            </tr>
+            <br>
+            <tr>
+                <td><button (click)="viewYourBill()" class="btn btn-primary btn-lg btn-block">View Trip Bill</button></td>
+                <br>
+                <br>
+                <td><button (click) = "viewTripCabWise()" class="btn btn-primary btn-lg btn-block">View Trip CabWise</button></td>
+                <br>
+            </tr>
+            <br>
+            <tr>
+                <td><button (click)="viewTripDateWise()" class="btn btn-primary btn-lg btn-block">View Trip DateWise</button></td>
+                <br>
+                <br>
+                <td><button (click)="viewTripCustomerWise()" class="btn btn-primary btn-lg btn-block">View Trip Customer Wise</button></td>
+                <br>
+            </tr>
+            <br>
+            <tr>
+                <td><button (click)="viewAllCustomers()" class="btn btn-primary btn-lg btn-block">View All Customers</button></td>
+                <br>
+                <br>
+                <td><button (click)="BookATrip()" class="btn btn-primary btn-lg btn-block">Add Trip Booking</button></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+</div>
+</div>
+</div>

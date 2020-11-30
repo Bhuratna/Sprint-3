@@ -1,0 +1,25 @@
+.back2 {
+    background-image: url("https://ns.yatracdn.com/common/images/fresco/fresco-footer-images/corona/car-guidlines/01.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   height: 50vw;
+   overflow: hidden;
+}
+.sections2{
+    text-align: center;
+    font-size: 22px;
+ opacity: 0.9;  
+    margin-top: 50px;
+    padding-top: 5px;
+}
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }

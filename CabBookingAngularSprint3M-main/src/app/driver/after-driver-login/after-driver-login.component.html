@@ -1,0 +1,30 @@
+<div *ngIf="driver !== undefined">
+    <div class="main"></div>
+ 
+    <div class="back2">
+        <div class="sections2 jumbotron" >
+    <div class="firstSection">
+        <h2> 
+            <style>
+                h2 {text-align: center;}
+                </style>
+        Welcome {{driver.username}} To Our Portal </h2>
+        <br>
+        Email Id:  {{driver.email}}
+        <br>
+        Mobile Number: {{driver.mobileNumber}}
+        <br>
+        Driver id: {{driver.driverId}}
+    </div>
+    <div class="secondSection">
+        Do You Want To Update Your Profile?
+        <button (click)="updateDriver()" class="btn btn-primary btn-lg btn-block">Update Your Profile</button>
+    </div>
+    <div class="thirdSection">
+        What Would you Want to do next?
+        <br>
+        <button (click)="bestDrivers()" class="btn btn-primary btn-lg btn-block">View Best Drivers</button>
+    </div>
+    </div>
+    </div>
+    </div>
